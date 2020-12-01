@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "piston-block-chunk-loader",
+  "version": "${version}",
+
+  "name": "PistonBlock Chunk Loader",
+  "description": "This is a mod used for load chunk with piston head",
+  "authors": [
+    "memorydream",
+    "LegendsOfSky"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/pistonblockchunkloader/logo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.gcServer.chunkLoader.PistonBlockChunkLoader"
+    ]
+  },
+  "mixins": [
+    "piston-block-chunk-loader.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
